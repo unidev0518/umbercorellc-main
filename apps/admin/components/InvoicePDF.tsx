@@ -1,6 +1,21 @@
 import {
-  Document, Page, Text, View, StyleSheet, Image, Font,
+  Document as PDFDocument,
+  Page as PDFPage,
+  Text as PDFText,
+  View as PDFView,
+  StyleSheet,
+  Image as PDFImage,
+  Font,
 } from "@react-pdf/renderer";
+import type { ComponentType, ReactNode } from "react";
+
+/** @react-pdf/renderer class components are incompatible with React 19 JSX typings. */
+type PdfProps = { children?: ReactNode; style?: unknown; src?: string; size?: string | string[]; [key: string]: unknown };
+const Document = PDFDocument as unknown as ComponentType<PdfProps>;
+const Page = PDFPage as unknown as ComponentType<PdfProps>;
+const Text = PDFText as unknown as ComponentType<PdfProps>;
+const View = PDFView as unknown as ComponentType<PdfProps>;
+const Image = PDFImage as unknown as ComponentType<PdfProps>;
 
 Font.register({
   family: "Inter",

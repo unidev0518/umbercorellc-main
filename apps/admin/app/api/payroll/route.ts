@@ -9,7 +9,15 @@ export async function GET() {
 
   const db = adminClient();
 
-  const { data: projects } = await db
+  type Developer = { id: string; full_name: string; email: string };
+  type ProjectRow = {
+    id: string;
+    name: string;
+    developer_hourly_rate: number;
+    developer: Developer | null;
+  };
+
+  const { data: projectsRaw } = await db
     .from("projects")
     .select(`
       id, name, developer_hourly_rate,
@@ -19,10 +27,21 @@ export async function GET() {
     .not("developer_id", "is", null)
     .not("developer_hourly_rate", "is", null);
 
-  if (!projects?.length) return NextResponse.json({ developers: [], pendingCount: 0 });
+  const projects: ProjectRow[] = (projectsRaw || []).map((p) => {
+    const raw = p.developer as Developer | Developer[] | null;
+    const developer = Array.isArray(raw) ? raw[0] ?? null : raw;
+    return {
+      id: p.id as string,
+      name: p.name as string,
+      developer_hourly_rate: Number(p.developer_hourly_rate),
+      developer,
+    };
+  });
 
-  const projectIds = projects.map((p: { id: string }) => p.id);
-  const developerIds = [...new Set(projects.map((p: { developer: { id: string } | null }) => p.developer?.id).filter(Boolean))] as string[];
+  if (!projects.length) return NextResponse.json({ developers: [], pendingCount: 0 });
+
+  const projectIds = projects.map((p) => p.id);
+  const developerIds = [...new Set(projects.map((p) => p.developer?.id).filter(Boolean))] as string[];
 
   const [{ data: lastSettled }, { data: entries }, { data: methods }, { data: history }] = await Promise.all([
     db.from("payroll_settlements").select("developer_id, period_end").in("developer_id", developerIds).order("period_end", { ascending: false }),
@@ -68,14 +87,10 @@ export async function GET() {
     periodEnd: string | null;
   }>();
 
-  const projectById = Object.fromEntries(projects.map((p: { id: string }) => [p.id, p]));
+  const projectById = Object.fromEntries(projects.map((p) => [p.id, p]));
 
   for (const e of entries || []) {
-    const project = projectById[e.project_id] as {
-      developer?: { id: string; full_name: string; email: string };
-      name: string;
-      developer_hourly_rate: number;
-    } | undefined;
+    const project = projectById[e.project_id];
     if (!project?.developer?.id) continue;
 
     const lastPeriodEnd = lastPaidMap[project.developer.id];
