@@ -1,4 +1,7 @@
 {
+  "installCommand": "cd ../.. && pnpm install",
+  "buildCommand": "cd ../.. && pnpm build --filter=@umbercore/admin",
+  "framework": "nextjs",
   "crons": [
     {
       "path": "/api/cron/generate-invoices",

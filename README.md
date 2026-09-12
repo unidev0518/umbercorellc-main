@@ -30,12 +30,31 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Deploy (Vercel)
 
-- Root directory: `apps/web`
-- Install command: `cd ../.. && pnpm install`
-- Build command: `cd ../.. && pnpm build --filter=@umbercore/web`
-- Add all env vars from `.env.example`
-- Stripe webhook URL: `https://your-domain.com/api/stripe/webhook`
-- Calendly webhook: `https://your-domain.com/api/calendly/webhook`
+This is a monorepo with **three Next.js apps**. Create one Vercel project per app (do not deploy from the repo root).
+
+| App | Root Directory | Filter |
+|-----|----------------|--------|
+| Marketing site | `apps/web` | `@umbercore/web` |
+| Admin | `apps/admin` | `@umbercore/admin` |
+| Client/developer portal | `apps/portal` | `@umbercore/portal` |
+
+For each project in **Settings → General / Build & Development Settings**:
+
+1. **Root Directory** → the app path above (e.g. `apps/web`)
+2. **Framework Preset** → `Next.js` (not Other)
+3. **Output Directory** → leave **empty** (do not set `public`)
+4. Install / Build are already in each app’s `vercel.json`; if you override them:
+   - Install: `cd ../.. && pnpm install`
+   - Build: `cd ../.. && pnpm build --filter=@umbercore/<app>`
+
+Also set:
+
+- Package Manager: `pnpm`
+- Node.js: `20.x` or newer
+- Env vars from `.env.example` (per app as needed)
+
+Stripe webhook URL: `https://your-domain.com/api/stripe/webhook`  
+Calendly webhook: `https://your-domain.com/api/calendly/webhook`
 
 ## Admin access
 
