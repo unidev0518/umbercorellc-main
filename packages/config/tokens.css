@@ -1,0 +1,42 @@
+:root {
+  /* UmberCore — espresso surfaces, copper + antique gold */
+  --brand-primary: 36 28% 94%;
+  --brand-green: 28 62% 48%;
+  --brand-green-soft: 32 70% 62%;
+  --brand-blue: 38 42% 58%;
+  --brand-blue-soft: 40 45% 72%;
+  --brand-accent: 32 70% 52%;
+  --brand-accent-soft: 28 62% 48%;
+  --brand-secondary: 38 42% 58%;
+  --brand-glow: 28 62% 48%;
+  --brand-danger: 8 68% 52%;
+  --surface-default: 24 18% 8%;
+  --surface-elevated: 24 16% 12%;
+  --surface-dark: 24 22% 5%;
+  --surface-mid: 24 14% 16%;
+  --text-primary: 36 28% 94%;
+  --text-muted: 28 12% 52%;
+  --success: 28 62% 46%;
+  --warning: 38 82% 52%;
+  --danger: 8 68% 52%;
+  --radius: 0.5rem;
+  --background: var(--surface-default);
+  --foreground: var(--text-primary);
+  --card: var(--surface-elevated);
+  --card-foreground: var(--text-primary);
+  --popover: var(--surface-elevated);
+  --popover-foreground: var(--text-primary);
+  --primary: 36 28% 94%;
+  --primary-foreground: 24 22% 8%;
+  --secondary: 24 14% 16%;
+  --secondary-foreground: var(--text-primary);
+  --muted: 24 14% 14%;
+  --muted-foreground: var(--text-muted);
+  --accent: var(--brand-blue);
+  --accent-foreground: 24 22% 6%;
+  --destructive: var(--danger);
+  --destructive-foreground: 0 0% 100%;
+  --border: 24 12% 18%;
+  --input: 24 12% 16%;
+  --ring: var(--brand-green);
+}

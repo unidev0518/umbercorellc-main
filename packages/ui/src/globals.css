@@ -1,0 +1,88 @@
+@import "@umbercore/config/tokens";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    @apply bg-surface-default text-foreground;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-tight text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-brand-green-soft to-brand-blue bg-clip-text text-transparent;
+  }
+  .text-gradient-readable {
+    @apply text-brand-green-soft;
+  }
+  .glass {
+    @apply border border-white/10 bg-white/5 backdrop-blur-xl;
+  }
+  .glass-card {
+    @apply rounded-2xl border border-border bg-gradient-card shadow-card backdrop-blur-sm;
+  }
+  .glow-ring {
+    box-shadow:
+      0 0 0 1px hsl(28 62% 48% / 0.28),
+      0 0 40px -8px hsl(38 42% 58% / 0.18);
+  }
+  .hero-title {
+    @apply text-foreground;
+    letter-spacing: -0.045em;
+  }
+  .hero-highlight {
+    background: linear-gradient(
+      115deg,
+      hsl(32 70% 72%) 0%,
+      hsl(28 62% 52%) 35%,
+      hsl(38 48% 62%) 70%,
+      hsl(40 45% 74%) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: block;
+    padding-bottom: 0.06em;
+  }
+  .hero-eyebrow {
+    @apply font-mono text-[10px] font-semibold uppercase tracking-[0.22em] text-brand-blue/80;
+  }
+  .hero-lead {
+    @apply text-lg leading-[1.75] text-foreground/70 sm:text-xl;
+  }
+  .hero-cap-panel {
+    @apply rounded-xl border border-white/[0.08] bg-surface-elevated/50 p-4 backdrop-blur-sm;
+    box-shadow:
+      0 0 0 1px hsl(28 62% 48% / 0.08),
+      inset 0 1px 0 hsl(36 28% 94% / 0.04);
+  }
+  .hero-visual-panel {
+    box-shadow:
+      0 0 0 1px hsl(28 62% 48% / 0.14),
+      0 8px 40px -12px hsl(38 42% 58% / 0.18),
+      0 0 60px -20px hsl(28 62% 48% / 0.14);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-float,
+  .animate-float-delayed,
+  .animate-pulse-glow,
+  .animate-shimmer,
+  .animate-spin-slow,
+  .animate-gradient-x,
+  .animate-attack {
+    animation: none !important;
+  }
+}

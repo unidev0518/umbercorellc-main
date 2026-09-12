@@ -1,0 +1,19 @@
+{
+  "name": "umbercore",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "dev:clean": "node -e \"try{require('fs').rmSync('apps/web/.next',{recursive:true,force:true})}catch(e){}\" && turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck"
+  },
+  "devDependencies": {
+    "turbo": "^2.5.4",
+    "typescript": "^5.8.3"
+  },
+  "packageManager": "pnpm@8.15.9",
+  "engines": {
+    "node": ">=20"
+  }
+}

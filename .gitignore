@@ -1,0 +1,16 @@
+node_modules
+.next
+.turbo
+dist
+coverage
+.env
+.env.local
+.env.*.local
+*.tsbuildinfo
+*.pem
+*.key
+.DS_Store
+.vercel
+.github-token
+.pnpm-store
+
