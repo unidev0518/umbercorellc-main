@@ -1,7 +1,8 @@
 {
-  "installCommand": "cd ../.. && pnpm install",
-  "buildCommand": "cd ../.. && pnpm build --filter=@umbercore/admin",
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": "nextjs",
+  "installCommand": "cd ../.. && pnpm install",
+  "buildCommand": "cd ../.. && pnpm exec turbo run build --filter=@umbercore/admin",
   "crons": [
     {
       "path": "/api/cron/generate-invoices",

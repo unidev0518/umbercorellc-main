@@ -17,11 +17,11 @@ import {
   ClientForm,
 } from "@umbercore/ui";
 
-const tabs = ["Find Talent", "Find Work"] as const;
+const tabs = ["Start a Project", "Join Our Network"] as const;
 type Tab = (typeof tabs)[number];
 
 function GetStartedSection() {
-  const [active, setActive] = useState<Tab>("Find Talent");
+  const [active, setActive] = useState<Tab>("Start a Project");
 
   return (
     <section id="get-started" className="relative py-24">
@@ -32,7 +32,7 @@ function GetStartedSection() {
             Get started
           </h2>
           <p className="mt-3 text-lg text-muted-foreground">
-            Tell us who you are — we respond within 1 business day.
+            Tell us about your initiative — we respond within 1 business day.
           </p>
         </FadeIn>
 
@@ -57,23 +57,23 @@ function GetStartedSection() {
 
             <Card className="border-border bg-gradient-card shadow-elevated glow-ring">
               <CardContent className="pt-6">
-                {active === "Find Talent" ? (
+                {active === "Start a Project" ? (
                   <>
                     <h3 className="font-heading text-xl font-bold text-foreground mb-1">
-                      Find Talent
+                      Start a Project
                     </h3>
                     <p className="text-sm text-muted-foreground mb-6">
-                      We have a pool of talent for almost any technology. Give us as much information as you can and we will respond within 1 business day.
+                      Share your software, data, cloud, or AI initiative. We&apos;ll recommend the right consulting and delivery approach.
                     </p>
                     <ClientForm />
                   </>
                 ) : (
                   <>
                     <h3 className="font-heading text-xl font-bold text-foreground mb-1">
-                      Find Work
+                      Join Our Network
                     </h3>
                     <p className="text-sm text-muted-foreground mb-6">
-                      We work with tech professionals across all disciplines. We&apos;ll be in touch when there&apos;s a fit.
+                      We work with experienced technical professionals across software, data, cloud, and AI. We&apos;ll reach out when there&apos;s a fit.
                     </p>
                     <CandidateForm />
                   </>

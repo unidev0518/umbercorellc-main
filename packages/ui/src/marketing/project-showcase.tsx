@@ -24,7 +24,7 @@ export interface ShowcaseProject {
 export function ProjectShowcase({
   projects,
   title = "Projects that prove our value",
-  subtitle = "Real outcomes from AI security engagements — see what you get before you book.",
+  subtitle = "Illustrative engagement scenarios across consulting and delivery.",
   showAllLink,
 }: {
   projects: ShowcaseProject[];

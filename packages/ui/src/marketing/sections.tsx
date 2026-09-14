@@ -39,10 +39,10 @@ import { FadeIn } from "../lib/motion";
 
 export function TrustBar() {
   const items = [
-    { icon: Clock, label: "Fast delivery" },
-    { icon: Users, label: "Vetted talent network" },
+    { icon: Clock, label: "Practical delivery" },
+    { icon: Users, label: "Specialized engineers" },
     { icon: MapPin, label: "US-based operations" },
-    { icon: Briefcase, label: "Project or retainer" },
+    { icon: Briefcase, label: "Consulting & projects" },
   ];
 
   return (
@@ -70,18 +70,18 @@ export function ProblemCards() {
   const cards = [
     {
       icon: Search,
-      title: "Finding AI talent is slow",
-      desc: "Hiring AI engineers takes months. Projects can't wait. We place vetted candidates in weeks.",
+      title: "Software initiatives stall without the right expertise",
+      desc: "Architecture, data, cloud, and delivery require specialized skills. We bring the consulting and engineering support to move work forward.",
     },
     {
       icon: Rocket,
-      title: "Projects stall without the right team",
-      desc: "Good ideas die in planning. We staff projects end-to-end and take ownership of delivery.",
+      title: "Build, integrate, and operate — not just plan",
+      desc: "We help design and ship software systems, then support hosting, data pipelines, and ongoing technical delivery.",
     },
     {
       icon: Users,
-      title: "You need guidance, not just headcount",
-      desc: "Strategy without execution is worthless. We bring both — advisory and the people to act on it.",
+      title: "You need outcomes, not just headcount",
+      desc: "Strategy without execution is worthless. We combine technology consulting with specialized engineering resources matched to project needs.",
     },
   ];
 
@@ -91,10 +91,10 @@ export function ProblemCards() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeIn className="mx-auto max-w-2xl text-center">
           <h2 className="font-heading text-3xl font-bold text-foreground md:text-4xl">
-            AI adoption is fast. Building the right team isn&apos;t.
+            Modern software needs more than a hiring pipeline.
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            We bridge the gap — between the idea and the engineers who deliver it.
+            We bridge strategy and delivery — software, data, cloud, and AI-assisted engineering.
           </p>
         </FadeIn>
         <div className="mt-12 grid gap-6 md:grid-cols-3">
@@ -143,7 +143,7 @@ export function ServiceGrid({
             What we do
           </h2>
           <p className="mt-3 text-lg text-muted-foreground">
-            Consulting, staffing, and delivery — scoped to where you are.
+            Software consulting, data, cloud hosting, and AI-assisted delivery — scoped to where you are.
           </p>
         </FadeIn>
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -189,9 +189,9 @@ export function ServiceGrid({
 
 export function HowItWorks() {
   const steps = [
-    { n: "1", title: "Tell us what you need", desc: "Share your project or hiring goal — we'll scope it with you" },
-    { n: "2", title: "We build the team", desc: "We source and vet the right talent for your specific needs" },
-    { n: "3", title: "You get results", desc: "Delivery on time, with full handoff and documentation" },
+    { n: "1", title: "Tell us what you need", desc: "Share your software, data, cloud, or AI initiative — we'll scope it with you" },
+    { n: "2", title: "We assemble the right expertise", desc: "Specialists matched to project requirements across consulting and delivery" },
+    { n: "3", title: "You get results", desc: "Build, integrate, host, and hand off with clear documentation" },
   ];
 
   return (
@@ -230,14 +230,14 @@ export function FinalCta() {
             Ready to get started?
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            Submit your project or share your profile — we respond within one business day.
+            Tell us about your software, data, or cloud initiative — we respond within one business day.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <Button size="lg" variant="accent" className="shadow-glow-lg hover:scale-[1.02]" asChild>
-              <Link href="/join-us">I have a project</Link>
+              <Link href="/#get-started">Start a Project</Link>
             </Button>
             <Button size="lg" variant="outline" className="border-white/20 text-white hover:bg-white/10" asChild>
-              <Link href="/join-us">I&apos;m a candidate</Link>
+              <Link href="/#get-started">Join Our Network</Link>
             </Button>
           </div>
         </FadeIn>
@@ -268,17 +268,18 @@ export function AboutStrip() {
           <FadeIn delay={0.1}>
             <p className="hero-eyebrow mb-4">Who we are</p>
             <h2 className="font-heading text-3xl font-bold text-foreground md:text-4xl">
-              A team that treats your project like their own.
+              Technology consulting that ships.
             </h2>
             <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-              UmberCore is a technology staffing and delivery agency. We work with companies
-              to find the right engineers and ensure projects get shipped — not just started.
+              UmberCore is a software and technology consulting company. We help businesses
+              design, build, integrate, host, and operate modern software systems using
+              experienced engineers, cloud technologies, data platforms, and AI-assisted workflows.
             </p>
             <ul className="mt-8 space-y-4">
               {[
-                "Vetted engineers across all tech disciplines",
-                "End-to-end project ownership — not just CVs",
-                "US-based operations, global talent network",
+                "Software, data, cloud, and AI-enabled engineering",
+                "Flexible delivery — consulting, projects, or specialized support",
+                "US-based operations with an engineering network matched to need",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-green/20">
@@ -304,10 +305,10 @@ const gradientText: React.CSSProperties = {
   color: "transparent",
 };
 
-const stats = [
-  { value: "48h", label: "Avg. time to first candidate" },
-  { value: "200+", label: "Engineers placed globally" },
-  { value: "95%", label: "Client retention rate" },
+const capabilities = [
+  { value: "Build", label: "Software & APIs" },
+  { value: "Data", label: "Processing & pipelines" },
+  { value: "Host", label: "Cloud workloads" },
 ];
 
 export function TeamPhotos() {
@@ -321,11 +322,11 @@ export function TeamPhotos() {
         <FadeIn className="mb-16 max-w-2xl">
           <p className="hero-eyebrow mb-3">Our approach</p>
           <h2 className="font-heading text-4xl font-extrabold leading-[1.05] tracking-[-0.03em] text-foreground sm:text-5xl">
-            People behind<br />the delivery.
+            Delivery shaped<br />around your work.
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-foreground/55">
-            Every engagement is led by experienced practitioners —<br className="hidden lg:block" />
-            not account managers or sales teams.
+            Engagements are led by experienced technical professionals —<br className="hidden lg:block" />
+            with specialists matched to project requirements.
           </p>
         </FadeIn>
 
@@ -370,9 +371,9 @@ export function TeamPhotos() {
               </div>
             </FadeIn>
 
-            {/* Stats grid */}
+            {/* Capability grid */}
             <FadeIn delay={0.14} className="grid grid-cols-3 gap-3">
-              {stats.map((s, i) => (
+              {capabilities.map((s) => (
                 <div
                   key={s.label}
                   className="flex flex-col items-center justify-center gap-1.5 rounded-xl border border-white/[0.07] bg-surface-elevated/80 px-3 py-5 text-center backdrop-blur-sm"
@@ -387,21 +388,15 @@ export function TeamPhotos() {
               ))}
             </FadeIn>
 
-            {/* Quote card */}
+            {/* Delivery model card */}
             <FadeIn delay={0.2} className="rounded-xl border border-white/[0.07] bg-surface-elevated/60 p-6 backdrop-blur-sm">
-              <p className="text-sm leading-relaxed text-foreground/60 italic">
-                &ldquo;UmberCore had our team fully onboarded in under two weeks.
-                The quality of talent and the speed of delivery exceeded every expectation.&rdquo;
+              <p className="text-sm leading-relaxed text-foreground/60">
+                UmberCore uses a flexible delivery model that combines technical consulting
+                with specialized engineering resources selected according to project needs.
               </p>
-              <div className="mt-4 flex items-center gap-3">
-                <div className="h-8 w-8 rounded-full bg-gradient-to-br from-brand-green/40 to-brand-blue/40 flex items-center justify-center text-xs font-bold text-foreground/80">
-                  JM
-                </div>
-                <div>
-                  <p className="text-xs font-semibold text-foreground/80">James M.</p>
-                  <p className="text-[10px] text-muted-foreground">CTO, Series B SaaS</p>
-                </div>
-              </div>
+              <p className="mt-4 text-xs font-semibold uppercase tracking-widest text-foreground/40">
+                Consulting · Projects · Engineering support
+              </p>
             </FadeIn>
           </div>
         </div>
@@ -444,7 +439,7 @@ export function Industries() {
               Deep expertise<br />across every sector.
             </h2>
             <p className="max-w-sm text-sm leading-relaxed text-foreground/50 lg:text-right">
-              Our talent network spans 14+ verticals — so we match your industry, not just your job title.
+              Software, data, and cloud work across many industries — so we match domain context, not just a job title.
             </p>
           </div>
         </FadeIn>
@@ -480,29 +475,20 @@ export function Industries() {
 
 export { ContactAside } from "./book-section";
 
-const testimonials = [
+const focusAreas = [
   {
-    quote: "UmberCore had our team fully onboarded in under two weeks. The quality of talent and the speed of delivery exceeded every expectation.",
-    name: "James M.",
-    title: "CTO",
-    company: "Series B SaaS",
-    initials: "JM",
+    title: "Software & systems",
+    desc: "Architecture, implementation, modernization, and technical project delivery for web, backend, and enterprise applications.",
     color: "from-brand-green/40 to-brand-blue/40",
   },
   {
-    quote: "We've worked with a lot of staffing firms. UmberCore is the only one that felt like a genuine partner — they understood our tech stack and our culture before sending a single candidate.",
-    name: "Sarah K.",
-    title: "VP of Engineering",
-    company: "Fintech Scale-up",
-    initials: "SK",
+    title: "Data & hosting",
+    desc: "Data processing, integration, pipelines, and cloud application hosting — so systems can run reliably in production.",
     color: "from-brand-blue/40 to-violet-400/40",
   },
   {
-    quote: "Three contract engineers placed within 48 hours. All three are still with us 18 months later. That's the kind of result that keeps us coming back.",
-    name: "David R.",
-    title: "Head of Technology",
-    company: "Healthcare Platform",
-    initials: "DR",
+    title: "AI-assisted delivery",
+    desc: "Modern AI development workflows to accelerate prototyping, coding, testing, documentation, and modernization — with human oversight.",
     color: "from-violet-400/40 to-brand-green/40",
   },
 ];
@@ -516,35 +502,23 @@ export function Testimonials() {
       </div>
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeIn className="mb-14 text-center">
-          <p className="hero-eyebrow mb-3">Client stories</p>
+          <p className="hero-eyebrow mb-3">What we deliver</p>
           <h2 className="font-heading text-4xl font-extrabold tracking-[-0.03em] text-foreground sm:text-5xl">
-            What our clients say.
+            Broad technology consulting.
           </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-lg text-foreground/50">
+            From software engineering to data processing and cloud hosting — scoped to practical business outcomes.
+          </p>
         </FadeIn>
         <div className="grid gap-6 md:grid-cols-3">
-          {testimonials.map((t, i) => (
-            <FadeIn key={t.name} delay={i * 0.1}>
+          {focusAreas.map((t, i) => (
+            <FadeIn key={t.title} delay={i * 0.1}>
               <div className="flex h-full flex-col rounded-2xl border border-white/[0.07] bg-surface-elevated/40 p-7 backdrop-blur-sm">
-                {/* Stars */}
-                <div className="mb-5 flex gap-1">
-                  {[...Array(5)].map((_, j) => (
-                    <svg key={j} className="h-4 w-4 text-brand-green" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
-                </div>
-                <p className="flex-1 text-sm leading-relaxed text-foreground/65 italic">
-                  &ldquo;{t.quote}&rdquo;
+                <div className={`mb-5 h-1.5 w-12 rounded-full bg-gradient-to-r ${t.color}`} />
+                <h3 className="font-heading text-xl font-bold text-foreground/90">{t.title}</h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-foreground/65">
+                  {t.desc}
                 </p>
-                <div className="mt-6 flex items-center gap-3 border-t border-white/[0.06] pt-5">
-                  <div className={`h-9 w-9 shrink-0 rounded-full bg-gradient-to-br ${t.color} flex items-center justify-center text-xs font-bold text-foreground/80`}>
-                    {t.initials}
-                  </div>
-                  <div>
-                    <p className="text-sm font-semibold text-foreground/80">{t.name}</p>
-                    <p className="text-xs text-muted-foreground">{t.title}, {t.company}</p>
-                  </div>
-                </div>
               </div>
             </FadeIn>
           ))}

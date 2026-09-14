@@ -14,53 +14,57 @@ export interface CaseStudy {
   metrics: { label: string; value: string; highlight?: boolean }[];
 }
 
+/**
+ * Illustrative engagement scenarios used on service detail pages.
+ * Verify before presenting as named customer case studies.
+ */
 export const caseStudies: CaseStudy[] = [
   {
     id: "fintech-ai-platform",
     visual: "risk-dashboard",
     client: "Series B FinTech",
-    industry: "Financial services · 80 employees",
+    industry: "Financial services",
     serviceSlug: "project-delivery",
     serviceLabel: "Project-Based Delivery",
-    headline: "AI-powered fraud detection shipped in 10 weeks",
+    headline: "Fraud scoring model delivered as a managed project",
     insight:
-      "Their in-house team had the domain knowledge but lacked AI engineering depth. We embedded a 4-person team, delivered a production-ready fraud scoring model, and handed off with full documentation and onboarding for their engineers.",
+      "The in-house team had domain knowledge but needed deeper ML and delivery support. A focused project team shipped a production-ready fraud scoring model with documentation and engineering handoff.",
     metrics: [
-      { label: "Time to production", value: "10 weeks", highlight: true },
-      { label: "Team placed", value: "4 engineers" },
-      { label: "False positive rate", value: "↓ 62%" },
+      { label: "Engagement model", value: "Managed delivery", highlight: true },
+      { label: "Focus", value: "ML + backend" },
+      { label: "Outcome", value: "Production handoff" },
     ],
   },
   {
     id: "healthcare-staff-aug",
     visual: "policy-shield",
     client: "Digital Health Platform",
-    industry: "Healthcare · 45 employees",
+    industry: "Healthcare",
     serviceSlug: "staff-augmentation",
-    serviceLabel: "Staff Augmentation",
-    headline: "3 senior AI engineers placed in 2 weeks",
+    serviceLabel: "Engineering Support",
+    headline: "Specialized engineering capacity for a critical launch window",
     insight:
-      "The team had headcount approved and a project starting in 30 days but no candidates. We sourced, screened, and placed three senior ML engineers — all cleared their 90-day check-in.",
+      "Headcount was approved and a project start date was set, but specialist capacity was missing. UmberCore matched senior ML engineers to the stack and timeline so the initiative could proceed.",
     metrics: [
-      { label: "Placement speed", value: "2 weeks", highlight: true },
-      { label: "Engineers placed", value: "3 seniors" },
-      { label: "Retention", value: "100% @ 90 days" },
+      { label: "Model", value: "Engineering support", highlight: true },
+      { label: "Focus", value: "ML specialists" },
+      { label: "Outcome", value: "Launch capacity" },
     ],
   },
   {
     id: "saas-discovery",
     visual: "compliance-map",
     client: "B2B SaaS Platform",
-    industry: "HR tech · 120 employees",
+    industry: "HR tech",
     serviceSlug: "technical-discovery",
     serviceLabel: "Technical Discovery & Scoping",
-    headline: "6-month project scoped and de-risked in 5 days",
+    headline: "Large roadmap scoped and de-risked before build",
     insight:
-      "They were about to greenlight a large AI roadmap without a detailed spec. Our discovery sprint surfaced two major integration risks and cut the initial phase scope by 40% — saving months of rework.",
+      "A broad AI roadmap was about to be greenlit without a detailed spec. A discovery sprint surfaced integration risks and reduced initial phase scope — avoiding months of rework.",
     metrics: [
-      { label: "Discovery time", value: "5 days", highlight: true },
-      { label: "Scope reduction", value: "40% phase 1" },
-      { label: "Risks surfaced", value: "6 critical" },
+      { label: "Model", value: "Discovery sprint", highlight: true },
+      { label: "Focus", value: "Scope & risk" },
+      { label: "Outcome", value: "Phased plan" },
     ],
   },
 ];

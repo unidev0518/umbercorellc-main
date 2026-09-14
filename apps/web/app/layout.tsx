@@ -31,31 +31,35 @@ function getMetadataBase(): URL {
 export const metadata: Metadata = {
   metadataBase: getMetadataBase(),
   title: {
-    default: "UmberCore — Technology Staffing & Delivery",
+    default: "UmberCore | Software, Data, Cloud & AI Consulting",
     template: "%s | UmberCore",
   },
   description:
-    "UmberCore is a global technology staffing and delivery agency. We source vetted engineers, embed them in your team, and take ownership of project outcomes.",
+    "UmberCore provides software development consulting, AI-assisted engineering, data processing, cloud hosting, backend development, integration, and technology delivery services.",
   keywords: [
-    "tech staffing",
-    "IT agency",
-    "software engineers",
-    "staff augmentation",
-    "project delivery",
+    "software development consulting",
+    "AI software development",
+    "data processing services",
+    "cloud hosting services",
+    "application hosting",
+    "backend development",
+    "data integration",
     "technology consulting",
+    "software engineering consulting",
   ],
   openGraph: {
     siteName: "UmberCore",
     type: "website",
     locale: "en_US",
-    title: "UmberCore — Technology Staffing & Delivery",
+    title: "UmberCore | Software, Data, Cloud & AI Consulting",
     description:
-      "Global technology staffing and delivery agency — vetted engineers, real outcomes.",
+      "Software and technology consulting — design, build, integrate, host, and operate modern systems.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "UmberCore — Technology Staffing & Delivery",
-    description: "We place the right engineers and take ownership of project outcomes.",
+    title: "UmberCore | Software, Data, Cloud & AI Consulting",
+    description:
+      "Software development, data processing, cloud hosting, and AI-assisted engineering consulting.",
   },
 };
 
@@ -63,7 +67,8 @@ const structuredData = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "UmberCore",
-  description: "Global technology staffing and delivery agency — vetted engineers, real outcomes.",
+  description:
+    "Software and technology consulting company helping businesses design, build, integrate, host, and operate modern software systems.",
   url: "https://umbercore.com",
   logo: "https://umbercore.com/og-image.png",
   sameAs: [],

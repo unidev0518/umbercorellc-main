@@ -5,9 +5,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "What Is Staff Augmentation? | UmberCore",
+  title: "Engineering Support & Staff Augmentation | UmberCore",
   description:
-    "Staff augmentation lets you extend your team with vetted external engineers on a flexible basis. Learn how it works, when to use it, and how it compares to managed services.",
+    "Flexible engineering support from specialized software, cloud, data, and AI professionals matched to project requirements — a consulting delivery option within UmberCore's broader technology services.",
 };
 
 const pros = [
@@ -116,15 +116,15 @@ export default function StaffAugmentationPage() {
           <a href="/services" className="mb-6 inline-flex items-center gap-1.5 text-sm text-foreground/40 transition-colors hover:text-brand-green">
             ← Back to Services
           </a>
-          <p className="hero-eyebrow mb-4 mt-2">Staff Augmentation</p>
+          <p className="hero-eyebrow mb-4 mt-2">Engineering Support</p>
           <h1 className="font-heading text-5xl font-extrabold leading-[1.05] tracking-[-0.03em] text-foreground sm:text-6xl">
-            Harnessing global power —<br />
+            Flexible engineering capacity —<br />
             <span style={gradientText}>what is staff augmentation?</span>
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-foreground/55">
-            Staff augmentation is the use of outside engineers on a flexible basis to extend
-            your team's capacity. It's one of the most powerful — and most misunderstood —
-            tools in a technology leader's toolkit.
+            Staff augmentation is one way UmberCore provides specialized engineering support —
+            embedding experienced technical professionals with your team on a flexible basis
+            within a broader consulting and delivery model.
           </p>
         </div>
       </section>
@@ -325,7 +325,7 @@ export default function StaffAugmentationPage() {
               href="/#get-started"
               className="inline-flex items-center gap-2 rounded-xl bg-brand-green px-7 py-3.5 font-semibold text-surface-dark transition-all hover:bg-brand-green/90"
             >
-              Find Talent
+              Start a Project
             </a>
             <a
               href="/services"

@@ -64,7 +64,7 @@ export default async function ServicePage({
       <ProjectShowcase
         projects={showcaseProjects}
         title="See the impact"
-        subtitle="How teams like yours moved faster with our help."
+        subtitle="Illustrative engagement scenarios for this service area."
       />
 
       <section className="py-16">

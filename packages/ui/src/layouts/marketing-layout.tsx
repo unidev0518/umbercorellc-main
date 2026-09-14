@@ -92,7 +92,7 @@ export function MarketingLayout({
                   Ready to get started?
                 </p>
                 <h3 className="font-heading text-2xl font-extrabold tracking-tight text-foreground sm:text-3xl">
-                  Your next great hire<br className="hidden sm:block" /> is one conversation away.
+                  Ready to discuss your next<br className="hidden sm:block" /> software or data initiative?
                 </h3>
               </div>
               <a
@@ -112,8 +112,8 @@ export function MarketingLayout({
             {/* Brand column */}
             <div>
               <Logo />
-              <p className="mt-5 max-w-[260px] text-sm leading-relaxed text-foreground/45">
-                Technology staffing and delivery agency. We place the right engineers and take ownership of project outcomes.
+              <p className="mt-5 max-w-[280px] text-sm leading-relaxed text-foreground/45">
+                Software and technology consulting — helping businesses design, build, integrate, host, and operate modern systems.
               </p>
             </div>
 
@@ -121,15 +121,11 @@ export function MarketingLayout({
             <div>
               <h4 className="text-[11px] font-semibold uppercase tracking-[0.16em] text-foreground/40 mb-5">Services</h4>
               <ul className="space-y-3 text-sm">
-                <li><a href="/#get-started" className="text-foreground/55 transition-colors hover:text-brand-green">Find Talent</a></li>
-                <li><a href="/#get-started" className="text-foreground/55 transition-colors hover:text-brand-green">Find Work</a></li>
                 <li><Link href="/services" className="text-foreground/55 transition-colors hover:text-brand-green">All Services</Link></li>
-                <li>
-                  <Link href="/services/staff-augmentation" className="text-foreground/55 transition-colors hover:text-brand-green">Staff Augmentation</Link>
-                </li>
-                <li>
-                  <Link href="/services/managed-delivery" className="text-foreground/55 transition-colors hover:text-brand-green">Managed Delivery</Link>
-                </li>
+                <li><Link href="/services/project-delivery" className="text-foreground/55 transition-colors hover:text-brand-green">Project Delivery</Link></li>
+                <li><Link href="/services/managed-delivery" className="text-foreground/55 transition-colors hover:text-brand-green">Managed Delivery</Link></li>
+                <li><Link href="/services/staff-augmentation" className="text-foreground/55 transition-colors hover:text-brand-green">Engineering Support</Link></li>
+                <li><a href="/#get-started" className="text-foreground/55 transition-colors hover:text-brand-green">Start a Project</a></li>
               </ul>
             </div>
 
@@ -163,7 +159,7 @@ export function MarketingLayout({
               © {new Date().getFullYear()} UmberCore. All rights reserved.
             </p>
             <p className="text-xs text-foreground/20 font-mono tracking-widest uppercase">
-              Technology Agency · Global
+              Software · Data · Cloud · AI
             </p>
           </div>
         </div>

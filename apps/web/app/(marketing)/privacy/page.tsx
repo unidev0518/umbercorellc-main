@@ -12,22 +12,22 @@ const sections = [
   {
     n: "02",
     title: "How We Use Your Information",
-    body: `We use the personal information you provide to respond to your inquiries, match you with relevant staffing and technology delivery services, send communications related to your request or our services, improve our website and service offerings, comply with legal obligations, and maintain records of our business interactions. We will not use your personal data for any purpose incompatible with these stated objectives without your prior consent.`,
+    body: `We use the personal information you provide to respond to your inquiries, match you with relevant technology consulting and delivery services, send communications related to your request or our services, improve our website and service offerings, comply with legal obligations, and maintain records of our business interactions. We will not use your personal data for any purpose incompatible with these stated objectives without your prior consent.`,
   },
   {
     n: "03",
     title: "SMS & Mobile Communications",
-    body: `By providing your phone number and consenting through our contact form, you agree to receive mobile messages from UmberCore related to your inquiry or our staffing services. Message frequency varies based on your engagement with us. Standard message and data rates may apply depending on your carrier and plan. You can opt out at any time by replying "STOP" to any message. For help, reply "HELP". Carriers are not liable for delayed or undelivered messages. UmberCore respects your communication preferences and will honor all opt-out requests promptly.`,
+    body: `By providing your phone number and consenting through our contact form, you agree to receive mobile messages from UmberCore related to your inquiry or our consulting services. Message frequency varies based on your engagement with us. Standard message and data rates may apply depending on your carrier and plan. You can opt out at any time by replying "STOP" to any message. For help, reply "HELP". Carriers are not liable for delayed or undelivered messages. UmberCore respects your communication preferences and will honor all opt-out requests promptly.`,
   },
   {
     n: "04",
     title: "Data Retention",
-    body: `UmberCore retains your personal data for as long as necessary to fulfill the purposes outlined in this policy or as required by applicable law. Contact inquiries are typically retained for up to three (3) years from the date of submission. Candidate and client records may be retained for longer periods in accordance with our staffing and legal obligations. You may request deletion of your data at any time by contacting us directly.`,
+    body: `UmberCore retains your personal data for as long as necessary to fulfill the purposes outlined in this policy or as required by applicable law. Contact inquiries are typically retained for up to three (3) years from the date of submission. Client and contractor records may be retained for longer periods in accordance with our business and legal obligations. You may request deletion of your data at any time by contacting us directly.`,
   },
   {
     n: "05",
     title: "Sharing Your Information",
-    body: `UmberCore does not sell, trade, or rent your personal information to third parties. We may share your information with our internal recruitment team members and authorized personnel who need access to respond to your inquiry, with trusted third-party service providers who assist in operating our website or conducting our business (under strict confidentiality agreements), and with legal authorities when required by law or to protect our legal rights. Any third parties with whom we share data are required to maintain the confidentiality and security of your information.`,
+    body: `UmberCore does not sell, trade, or rent your personal information to third parties. We may share your information with authorized personnel who need access to respond to your inquiry, with trusted third-party service providers who assist in operating our website or conducting our business (under strict confidentiality agreements), and with legal authorities when required by law or to protect our legal rights. Any third parties with whom we share data are required to maintain the confidentiality and security of your information.`,
   },
   {
     n: "06",
@@ -78,7 +78,7 @@ export default function PrivacyPage() {
             At UmberCore, we are committed to protecting your privacy and handling your personal
             information with transparency and care. This Privacy Policy explains how we collect,
             use, store, and protect the information you share with us when you use our website
-            or engage with our staffing and technology delivery services.
+            or engage with our technology consulting and delivery services.
           </p>
         </div>
       </div>

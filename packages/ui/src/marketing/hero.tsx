@@ -1,8 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import Link from "next/link";
-import { Rocket, Users, Code, Briefcase } from "lucide-react";
+import { Rocket, Cloud, Database, Sparkles } from "lucide-react";
 import { Button } from "../primitives/button";
 import { HeroReveal } from "../lib/motion";
 import { AnimatedBackground } from "./animated-background";
@@ -21,16 +20,15 @@ const HeroVisual = dynamic(
 );
 
 const capabilities = [
-  { icon: Rocket, label: "Project delivery" },
-  { icon: Users, label: "Staff augmentation" },
-  { icon: Code, label: "Software engineering" },
-  { icon: Briefcase, label: "Tech consulting" },
+  { icon: Rocket, label: "Software consulting" },
+  { icon: Sparkles, label: "AI-assisted development" },
+  { icon: Database, label: "Data processing" },
+  { icon: Cloud, label: "Cloud & hosting" },
 ] as const;
 
 export function Hero() {
   return (
     <section className="relative min-h-[92vh] overflow-hidden bg-gradient-hero text-foreground">
-      {/* Background photo */}
       <div
         className="pointer-events-none absolute inset-0"
         aria-hidden
@@ -49,23 +47,25 @@ export function Hero() {
 
       <div className="relative mx-auto grid max-w-7xl gap-12 px-4 py-20 sm:px-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-center lg:gap-16 lg:py-28 lg:px-8">
         <HeroReveal className="order-2 lg:order-1">
+          <p className="hero-eyebrow">Software. Data. Cloud. AI.</p>
           <h1 className="hero-title mt-6 font-heading leading-[1.05]">
             <span className="block text-[1.9rem] font-bold text-foreground/70 sm:text-[2.6rem] lg:text-[3rem]">
-              Your next project,
+              Software, Data &amp; AI Solutions
             </span>
-            <span className="hero-highlight mt-1 block text-[2.6rem] font-extrabold sm:text-[3.5rem] lg:text-[4.5rem]">
-              fully staffed.
+            <span className="hero-highlight mt-1 block text-[2.4rem] font-extrabold sm:text-[3.2rem] lg:text-[4rem]">
+              for modern businesses.
             </span>
           </h1>
 
           <p className="hero-lead mt-7 max-w-lg text-lg text-muted-foreground">
-            We source, place, and embed engineers in your team — so you can focus on
-            shipping, not hiring.
+            UmberCore helps companies design, build, integrate, host, and operate modern
+            software systems — combining software engineering, cloud infrastructure, data
+            processing, and AI-assisted development.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
             <Button variant="accent" size="lg" className="shadow-glow hover:scale-[1.02]" asChild>
-              <a href="#get-started">Find Talent</a>
+              <a href="#get-started">Start a Project</a>
             </Button>
             <Button
               variant="outline"
@@ -73,7 +73,7 @@ export function Hero() {
               className="border-white/10 bg-white/[0.03] text-foreground hover:border-brand-blue/40 hover:bg-brand-blue/10"
               asChild
             >
-              <a href="#get-started">Find Work</a>
+              <a href="/services">Explore Services</a>
             </Button>
           </div>
 

@@ -94,8 +94,11 @@ export function LeadForm() {
           {...register("service_interest")}
         >
           <option value="not_sure">Not sure yet</option>
-          <option value="ai-consulting">AI Solution Consulting</option>
-          <option value="staff-augmentation">Staff Augmentation</option>
+          <option value="ai-consulting">Software & AI Consulting</option>
+          <option value="ai-assisted-development">AI-Assisted Development</option>
+          <option value="data-processing">Data Processing & Integration</option>
+          <option value="cloud-hosting">Cloud & Application Hosting</option>
+          <option value="staff-augmentation">Engineering Support</option>
           <option value="project-delivery">Project-Based Delivery</option>
           <option value="technical-discovery">Technical Discovery & Scoping</option>
           <option value="team-enablement">Team Enablement & Ramp-up</option>

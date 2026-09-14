@@ -6,7 +6,8 @@ import {
 
 export const metadata: Metadata = {
   title: "Industries",
-  description: "UmberCore delivers technology staffing and project delivery across 14+ industries including Banking, Healthcare, Cybersecurity, Aerospace, and more.",
+  description:
+    "UmberCore delivers software, data, cloud, and AI consulting across industries including Banking, Healthcare, Cybersecurity, Aerospace, and more.",
 };
 
 const industries = [
@@ -184,24 +185,24 @@ export default function IndustriesPage() {
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6 lg:px-8">
           <p className="hero-eyebrow mb-3">Don't see your industry?</p>
           <h2 className="font-heading text-4xl font-extrabold tracking-[-0.03em] text-foreground">
-            We likely still have the talent you need.
+            We can still help.
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-lg text-foreground/50">
-            Our network spans hundreds of specialisations. If your vertical isn't listed,
-            reach out — chances are we've placed engineers in your space before.
+            Our engineering network spans many specialisations. If your vertical isn&apos;t listed,
+            reach out — we&apos;ll scope the right software, data, or cloud support for your domain.
           </p>
           <div className="mt-10 flex flex-wrap justify-center gap-4">
             <a
               href="/#get-started"
               className="inline-flex items-center gap-2 rounded-xl bg-brand-green px-7 py-3.5 font-semibold text-surface-dark transition-all hover:bg-brand-green/90"
             >
-              Find Talent
+              Start a Project
             </a>
             <a
-              href="/#get-started"
+              href="/services"
               className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.04] px-7 py-3.5 font-semibold text-foreground transition-all hover:bg-white/[0.08]"
             >
-              Find Work
+              View Services
             </a>
           </div>
         </div>

@@ -17,7 +17,7 @@ export interface ServiceTier {
 export interface ServiceDefinition {
   title: string;
   tagline: string;
-  category: "consulting" | "staffing" | "delivery" | "advisory";
+  category: "consulting" | "staffing" | "delivery" | "advisory" | "data" | "cloud";
   delivery: string;
   description: string;
   includes: string[];
@@ -72,15 +72,15 @@ function buildService(
 
 const catalog = {
   "ai-consulting": buildService("ai-consulting", {
-    title: "AI Solution Consulting",
-    tagline: "Turn your AI idea into a scoped, deliverable plan",
+    title: "Software & AI Consulting",
+    tagline: "Turn your initiative into a scoped, deliverable plan",
     category: "consulting",
     delivery: "1–2 weeks",
     description:
-      "We work with your team to define the right AI approach for your use case — architecture, tooling, build-vs-buy decisions, and a delivery roadmap you can execute.",
+      "We work with your team to define the right approach for software, data, cloud, or AI initiatives — architecture, tooling, build-vs-buy decisions, and a delivery roadmap you can execute.",
     includes: [
       "Current-state assessment",
-      "AI architecture recommendation",
+      "Architecture recommendation",
       "Build-vs-buy analysis",
       "Delivery roadmap with milestones",
     ],
@@ -103,34 +103,130 @@ const catalog = {
     ],
   }),
 
+  "ai-assisted-development": buildService("ai-assisted-development", {
+    title: "AI-Assisted Software Development",
+    tagline: "Accelerate delivery with modern AI workflows — and human oversight",
+    category: "consulting",
+    delivery: "2–8 weeks",
+    description:
+      "We help teams use modern AI development tools and workflows to accelerate software design, implementation, testing, documentation, and modernization while maintaining human engineering oversight.",
+    includes: [
+      "AI-enabled developer workflow setup",
+      "Rapid prototyping and iteration",
+      "Testing and documentation acceleration",
+      "Legacy modernization support",
+    ],
+    tiers: [
+      tier("pilot", "Pilot", 5000, 10000, "Single team or product area", [
+        "Workflow assessment",
+        "Tooling recommendations",
+        "Hands-on enablement",
+      ]),
+      tier("delivery", "Delivery Sprint", 12000, 25000, "Scoped feature or MVP", [
+        "AI-assisted build sprint",
+        "Engineering review gates",
+        "Handoff documentation",
+      ]),
+      tier("program", "Enablement Program", 20000, 40000, "Multi-team adoption", [
+        "Playbooks and standards",
+        "Coaching across teams",
+        "Ongoing advisory",
+      ]),
+    ],
+  }),
+
+  "data-processing": buildService("data-processing", {
+    title: "Data Processing & Integration",
+    tagline: "Ingest, transform, validate, and move business data",
+    category: "data",
+    delivery: "4–12 weeks",
+    description:
+      "Build systems that ingest, transform, validate, process, and move data between applications, databases, APIs, and cloud platforms — including ETL/ELT and operational workflows.",
+    includes: [
+      "Data ingestion and transformation",
+      "Validation and aggregation",
+      "API and system integration",
+      "Pipeline design and handoff",
+    ],
+    tiers: [
+      tier("foundation", "Foundation", 8000, 15000, "Single pipeline or integration", [
+        "Source-to-target mapping",
+        "Core transformation logic",
+        "Basic monitoring",
+      ]),
+      tier("platform", "Platform", 20000, 45000, "Multi-source processing", [
+        "Multiple pipelines",
+        "Quality checks",
+        "Operational runbooks",
+      ]),
+      tier("program", "Program", 45000, 90000, "Broader data initiative", [
+        "Phased delivery",
+        "Cross-system integration",
+        "Ongoing support option",
+      ]),
+    ],
+  }),
+
+  "cloud-hosting": buildService("cloud-hosting", {
+    title: "Cloud & Application Hosting",
+    tagline: "Deploy and operate apps, APIs, and workloads in the cloud",
+    category: "cloud",
+    delivery: "Ongoing / project",
+    description:
+      "Deploy and operate applications, APIs, backend services, databases, and workloads using modern cloud infrastructure. We support managed cloud hosting — we do not operate physical data centers.",
+    includes: [
+      "Application and API hosting setup",
+      "Deployment environments",
+      "Managed cloud workloads",
+      "Monitoring and operational support",
+    ],
+    tiers: [
+      tier("launch", "Launch", 5000, 12000, "Single app or API", [
+        "Environment setup",
+        "Deployment pipeline",
+        "Baseline monitoring",
+      ]),
+      tier("operate", "Operate", 8000, 20000, "Production workloads", [
+        "Hardening and scaling guidance",
+        "Ops runbooks",
+        "Ongoing support hours",
+      ]),
+      tier("migrate", "Migrate", 15000, 40000, "Migration or modernization", [
+        "Migration plan",
+        "Cutover support",
+        "Post-migration stabilization",
+      ]),
+    ],
+  }),
+
   "staff-augmentation": buildService("staff-augmentation", {
-    title: "Staff Augmentation",
-    tagline: "Vetted AI and tech talent — on your team, fast",
+    title: "Engineering Support",
+    tagline: "Specialized engineers matched to project requirements",
     category: "staffing",
     delivery: "Ongoing",
     description:
-      "We source, vet, and place AI engineers, data scientists, and tech leads into your team. You get skilled professionals who hit the ground running, without months of recruiting.",
+      "Provide flexible engineering capacity for projects that need specialized software, cloud, data, or AI expertise. Specialists are matched to requirements and can work embedded with your team or as part of a delivery-led engagement.",
     includes: [
-      "Candidate sourcing & screening",
+      "Requirements and role scoping",
+      "Specialist matching",
       "Technical skills assessment",
-      "Culture and team fit review",
       "Onboarding support",
     ],
     tiers: [
-      tier("single", "Single Placement", 5000, 8000, "One key hire", [
-        "1 candidate placed",
-        "2-week SLA",
-        "30-day placement guarantee",
+      tier("single", "Single Specialist", 5000, 8000, "One key capability", [
+        "1 specialist engaged",
+        "Scoped onboarding",
+        "30-day fit review",
       ]),
-      tier("team", "Small Team (2–4)", 12000, 20000, "Building a team fast", [
-        "2–4 candidates placed",
+      tier("team", "Small Team (2–4)", 12000, 20000, "Focused delivery capacity", [
+        "2–4 specialists",
         "Role definition assistance",
-        "60-day guarantee",
+        "Ongoing coordination",
       ]),
-      tier("program", "Ongoing Program", 20000, 40000, "Continuous hiring pipeline", [
-        "Dedicated talent sourcing",
-        "Monthly candidate pipeline",
-        "Priority placements",
+      tier("program", "Ongoing Program", 20000, 40000, "Continuous capacity", [
+        "Dedicated sourcing support",
+        "Monthly capability pipeline",
+        "Priority matching",
       ]),
     ],
   }),
@@ -141,7 +237,7 @@ const catalog = {
     category: "delivery",
     delivery: "4–16 weeks",
     description:
-      "Hand us a well-defined project and we'll deliver it end-to-end. We assemble a focused team of AI engineers and technical leads, manage the work, and ship.",
+      "Hand us a well-defined project and we'll deliver it end-to-end. We assemble a focused project-based engineering team, manage the work, and ship — software, data, cloud, or AI-assisted initiatives.",
     includes: [
       "Project scoping and kickoff",
       "Dedicated delivery team",
@@ -201,11 +297,11 @@ const catalog = {
 
   "team-enablement": buildService("team-enablement", {
     title: "Team Enablement & Ramp-up",
-    tagline: "Get your team up to speed on AI — fast",
+    tagline: "Get your team productive on modern tooling — fast",
     category: "advisory",
     delivery: "1–4 weeks",
     description:
-      "Hands-on coaching and workshops to bring your existing engineers and product teams up to speed on AI tooling, best practices, and delivery patterns.",
+      "Hands-on coaching and workshops to bring your existing engineers and product teams up to speed on AI-assisted development, cloud practices, and delivery patterns.",
     includes: [
       "Skills gap assessment",
       "Customized workshop content",
@@ -233,11 +329,11 @@ const catalog = {
 
   "advisory-retainer": buildService("advisory-retainer", {
     title: "Ongoing Tech Advisory",
-    tagline: "Your outsourced CTO and AI strategy partner",
+    tagline: "Senior technical guidance without full-time overhead",
     category: "advisory",
     delivery: "Monthly",
     description:
-      "Monthly strategic guidance on AI adoption, hiring decisions, architecture choices, and vendor selection. A senior technical advisor in your corner — without the full-time cost.",
+      "Monthly strategic guidance on software, data, cloud, and AI adoption — architecture choices, hiring decisions, and vendor selection. A senior technical advisor in your corner.",
     includes: [
       "Monthly strategy session",
       "Async question support",
@@ -255,7 +351,7 @@ const catalog = {
         "Slack access",
         "Vendor review included",
       ]),
-      tier("intensive", "Intensive", 6000, 10000, "Companies scaling AI fast", [
+      tier("intensive", "Intensive", 6000, 10000, "Companies scaling fast", [
         "8hr/month advisory",
         "Priority response",
         "Quarterly planning session",

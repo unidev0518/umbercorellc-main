@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "UmberCore — Technology Staffing & Delivery";
+export const alt = "UmberCore | Software, Data, Cloud & AI Consulting";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -22,7 +22,6 @@ export default function OgImage() {
           fontFamily: "system-ui, sans-serif",
         }}
       >
-        {/* Ambient blobs */}
         <div
           style={{
             position: "absolute",
@@ -46,7 +45,6 @@ export default function OgImage() {
           }}
         />
 
-        {/* Logo wordmark */}
         <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 44 }}>
           <div
             style={{
@@ -59,7 +57,7 @@ export default function OgImage() {
               justifyContent: "center",
             }}
           >
-              <div style={{ width: 16, height: 16, borderRadius: "50%", background: "#140f0c" }} />
+            <div style={{ width: 16, height: 16, borderRadius: "50%", background: "#140f0c" }} />
           </div>
           <span
             style={{
@@ -73,51 +71,47 @@ export default function OgImage() {
           </span>
         </div>
 
-        {/* Headline */}
         <div
           style={{
-            fontSize: 62,
+            fontSize: 58,
             fontWeight: 800,
             letterSpacing: "-0.03em",
             lineHeight: 1.05,
             color: "#f4ece4",
-            maxWidth: 820,
+            maxWidth: 900,
           }}
         >
-          {"Your next project, "}
-          <span style={{ color: "#e0b07a" }}>fully staffed.</span>
+          {"Software, Data & AI "}
+          <span style={{ color: "#e0b07a" }}>for modern businesses.</span>
         </div>
 
-        {/* Tagline */}
         <div
           style={{
             marginTop: 24,
             fontSize: 24,
             color: "rgba(241,245,249,0.5)",
             fontWeight: 400,
-            maxWidth: 640,
+            maxWidth: 720,
             lineHeight: 1.5,
           }}
         >
-          Global technology staffing and delivery. Engineers matched in 48 hours.
+          Technology consulting — design, build, integrate, host, and operate modern systems.
         </div>
 
-        {/* Stats row */}
-        <div style={{ display: "flex", gap: 48, marginTop: 52 }}>
+        <div style={{ display: "flex", gap: 40, marginTop: 52 }}>
           {[
-            { value: "200+", label: "Engineers placed" },
-            { value: "48h",  label: "Avg. time to match" },
-            { value: "95%",  label: "Client retention" },
-            { value: "14+",  label: "Industries" },
+            { value: "Software", label: "Consulting & delivery" },
+            { value: "Data", label: "Processing & pipelines" },
+            { value: "Cloud", label: "Hosting & infrastructure" },
+            { value: "AI", label: "Assisted engineering" },
           ].map((s) => (
             <div key={s.label} style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-              <span style={{ fontSize: 30, fontWeight: 800, color: "#e0b07a" }}>{s.value}</span>
+              <span style={{ fontSize: 28, fontWeight: 800, color: "#e0b07a" }}>{s.value}</span>
               <span style={{ fontSize: 14, color: "rgba(241,245,249,0.35)", fontWeight: 500 }}>{s.label}</span>
             </div>
           ))}
         </div>
 
-        {/* Domain */}
         <div
           style={{
             position: "absolute",

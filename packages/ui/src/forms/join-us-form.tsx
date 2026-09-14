@@ -210,7 +210,7 @@ export function ClientForm() {
         <Label htmlFor="cl_message">Message</Label>
         <textarea
           id="cl_message"
-          placeholder="Tell us about your staffing needs…"
+          placeholder="Tell us about your project or technical needs…"
           rows={4}
           {...register("message")}
           className="mt-1.5 w-full resize-y rounded-md border border-input bg-input/40 px-3 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring/50"
