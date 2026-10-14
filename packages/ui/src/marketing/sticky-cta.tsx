@@ -7,7 +7,7 @@ import { cn } from "../lib/utils";
 
 export function StickyBookCta() {
   const [visible, setVisible] = useState(false);
-  const bookUrl = "/join-us";
+  const bookUrl = "/contact";
 
   useEffect(() => {
     const onScroll = () => setVisible(window.scrollY > 400);
@@ -23,7 +23,7 @@ export function StickyBookCta() {
       )}
     >
       <Button variant="accent" size="lg" className="shadow-glow-lg" asChild>
-        <Link href={bookUrl}>Book Free Call</Link>
+        <Link href={bookUrl}>Contact</Link>
       </Button>
     </div>
   );

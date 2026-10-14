@@ -31,51 +31,49 @@ function getMetadataBase(): URL {
 export const metadata: Metadata = {
   metadataBase: getMetadataBase(),
   title: {
-    default: "UmberCore | Software, Data, Cloud & AI Consulting",
-    template: "%s | UmberCore",
+    default: "TravelGuards LLC | Drone Products & Accessories",
+    template: "%s | TravelGuards LLC",
   },
   description:
-    "UmberCore provides software development consulting, AI-assisted engineering, data processing, cloud hosting, backend development, integration, and technology delivery services.",
+    "TravelGuards LLC is a retail business focused on drone products, accessories, and related merchandise, offering product information, purchasing coordination, and customer assistance.",
   keywords: [
-    "software development consulting",
-    "AI software development",
-    "data processing services",
-    "cloud hosting services",
-    "application hosting",
-    "backend development",
-    "data integration",
-    "technology consulting",
-    "software engineering consulting",
+    "drone products",
+    "drone accessories",
+    "drone retail",
+    "consumer drones",
+    "drone product sales",
+    "drone purchasing",
+    "drone product sourcing",
   ],
   openGraph: {
-    siteName: "UmberCore",
+    siteName: "TravelGuards LLC",
     type: "website",
     locale: "en_US",
-    title: "UmberCore | Software, Data, Cloud & AI Consulting",
+    title: "TravelGuards LLC | Drone Products & Accessories",
     description:
-      "Software and technology consulting — design, build, integrate, host, and operate modern systems.",
+      "Retail sales of drone products, accessories, and related merchandise, with purchasing help by inquiry.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "UmberCore | Software, Data, Cloud & AI Consulting",
+    title: "TravelGuards LLC | Drone Products & Accessories",
     description:
-      "Software development, data processing, cloud hosting, and AI-assisted engineering consulting.",
+      "A customer-focused retailer for drone products, accessories, and related merchandise.",
   },
 };
 
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "UmberCore",
+  name: "TravelGuards LLC",
   description:
-    "Software and technology consulting company helping businesses design, build, integrate, host, and operate modern software systems.",
-  url: "https://umbercore.com",
-  logo: "https://umbercore.com/og-image.png",
-  sameAs: [],
-  contactPoint: {
-    "@type": "ContactPoint",
-    email: "support@umbercore.com",
-    contactType: "customer service",
+    "Retail and commerce business focused on drone products, accessories, and related merchandise.",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "84 W Broadway, Ste 200",
+    addressLocality: "Derry",
+    addressRegion: "NH",
+    postalCode: "03038",
+    addressCountry: "US",
   },
 };
 

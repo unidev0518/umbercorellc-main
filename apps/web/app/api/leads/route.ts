@@ -20,9 +20,13 @@ export async function POST(request: Request) {
         );
       }
 
+      const lead = {
+        ...parsed.data,
+        company_name: parsed.data.company_name?.trim() || "Individual",
+      };
       await Promise.all([
-        LeadService.createFromContact(parsed.data),
-        LeadRepository.createContactLead(parsed.data),
+        LeadService.createFromContact(lead),
+        LeadRepository.createContactLead(lead),
       ]);
 
       return NextResponse.json({ success: true });

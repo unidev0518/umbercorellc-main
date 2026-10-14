@@ -39,10 +39,10 @@ import { FadeIn } from "../lib/motion";
 
 export function TrustBar() {
   const items = [
-    { icon: Clock, label: "Practical delivery" },
-    { icon: Users, label: "Specialized engineers" },
-    { icon: MapPin, label: "US-based operations" },
-    { icon: Briefcase, label: "Consulting & projects" },
+    { icon: Clock, label: "Product inquiries" },
+    { icon: Users, label: "Customer-focused service" },
+    { icon: MapPin, label: "New Hampshire business" },
+    { icon: Briefcase, label: "Order coordination" },
   ];
 
   return (
@@ -87,7 +87,7 @@ export function ProblemCards() {
 
   return (
     <section className="relative py-24">
-      <AnimatedBackground variant="dark" />
+      <AnimatedBackground variant="light" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeIn className="mx-auto max-w-2xl text-center">
           <h2 className="font-heading text-3xl font-bold text-foreground md:text-4xl">
@@ -136,7 +136,7 @@ export function ServiceGrid({
 }) {
   return (
     <section className="relative overflow-hidden border-y border-border py-24">
-      <AnimatedBackground variant="dark" />
+      <AnimatedBackground variant="light" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeIn>
           <h2 className="font-heading text-3xl font-bold text-foreground md:text-4xl">
@@ -189,9 +189,10 @@ export function ServiceGrid({
 
 export function HowItWorks() {
   const steps = [
-    { n: "1", title: "Tell us what you need", desc: "Share your software, data, cloud, or AI initiative — we'll scope it with you" },
-    { n: "2", title: "We assemble the right expertise", desc: "Specialists matched to project requirements across consulting and delivery" },
-    { n: "3", title: "You get results", desc: "Build, integrate, host, and hand off with clear documentation" },
+    { n: "1", title: "Product inquiry", desc: "Contact us with the drone, accessory, or related item you have in mind." },
+    { n: "2", title: "Availability & information", desc: "We review the request and share the product information and purchasing options we can confirm." },
+    { n: "3", title: "Purchase coordination", desc: "Once details are confirmed, we coordinate the order according to the agreed arrangements." },
+    { n: "4", title: "Order follow-up", desc: "We share relevant updates and help with questions about the order." },
   ];
 
   return (
@@ -202,11 +203,11 @@ export function HowItWorks() {
             How it works
           </h2>
         </FadeIn>
-        <div className="relative mt-16 grid gap-10 md:grid-cols-3">
+        <div className="relative mt-16 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div className="absolute left-[16%] right-[16%] top-7 hidden h-0.5 bg-gradient-to-r from-brand-green/0 via-brand-blue/60 to-brand-green/0 md:block" />
           {steps.map((step, i) => (
             <FadeIn key={step.n} delay={i * 0.12} className="relative text-center">
-              <div className="relative mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-green to-brand-blue text-xl font-bold text-surface-dark shadow-glow">
+              <div className="relative mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-brand-green to-brand-blue text-xl font-bold text-white shadow-glow">
                 {step.n}
               </div>
               <h3 className="mt-6 font-heading text-lg font-semibold">{step.title}</h3>
@@ -223,7 +224,7 @@ export function FinalCta() {
   return (
     <section className="relative overflow-hidden py-24">
       <div className="absolute inset-0 bg-gradient-brand" />
-      <AnimatedBackground variant="dark" />
+      <AnimatedBackground variant="light" />
       <div className="relative mx-auto max-w-3xl px-4 text-center text-white">
         <FadeIn>
           <h2 className="font-heading text-3xl font-bold md:text-4xl">
@@ -249,18 +250,17 @@ export function FinalCta() {
 export function AboutStrip() {
   return (
     <section className="relative overflow-hidden border-t border-border py-24">
-      <AnimatedBackground variant="dark" />
+      <AnimatedBackground variant="light" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
           {/* Photo side */}
           <FadeIn className="relative">
-            <div className="relative overflow-hidden rounded-2xl border border-border/60 shadow-elevated">
+            <div className="overflow-hidden rounded-2xl border border-border/60 bg-white shadow-elevated">
               <img
-                src="/images/about-collab.jpg"
-                alt="Team collaborating in a modern office"
-                className="h-[420px] w-full object-cover"
+                src="/photos/gear-table.jpg"
+                alt="Folded drone, spare batteries, and a remote controller on a table"
+                className="aspect-[4/3] w-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-surface-dark/80 via-surface-dark/20 to-transparent" />
             </div>
           </FadeIn>
 
@@ -268,18 +268,18 @@ export function AboutStrip() {
           <FadeIn delay={0.1}>
             <p className="hero-eyebrow mb-4">Who we are</p>
             <h2 className="font-heading text-3xl font-bold text-foreground md:text-4xl">
-              Technology consulting that ships.
+              A straightforward retail business.
             </h2>
             <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-              UmberCore is a software and technology consulting company. We help businesses
-              design, build, integrate, host, and operate modern software systems using
-              experienced engineers, cloud technologies, data platforms, and AI-assisted workflows.
+              TravelGuards LLC is a New Hampshire retail company focused on drone products,
+              accessories, and related merchandise. We help with product information,
+              purchasing coordination, and clear follow-up.
             </p>
             <ul className="mt-8 space-y-4">
               {[
-                "Software, data, cloud, and AI-enabled engineering",
-                "Flexible delivery — consulting, projects, or specialized support",
-                "US-based operations with an engineering network matched to need",
+                "Drone products and accessories",
+                "Product selection and availability inquiries",
+                "Order coordination without an online checkout",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
                   <span className="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand-green/20">
@@ -406,20 +406,11 @@ export function TeamPhotos() {
 }
 
 const industries = [
-  { icon: Plane,         label: "Aerospace & Defense",      color: "text-brand-blue",  glow: "hsl(38 42% 58% / 0.14)" },
-  { icon: Car,           label: "Automotive & Transport",   color: "text-orange-300",  glow: "hsl(28 62% 48% / 0.14)" },
-  { icon: Landmark,      label: "Banking & Finance",        color: "text-brand-blue",  glow: "hsl(38 42% 58% / 0.14)" },
-  { icon: Database,      label: "Big Data & AI",            color: "text-brand-green", glow: "hsl(28 62% 48% / 0.14)" },
-  { icon: ShieldCheck,   label: "Cybersecurity",            color: "text-rose-400",    glow: "hsl(8 68% 52% / 0.12)"  },
-  { icon: Flame,         label: "Energy, Oil & Gas",        color: "text-orange-400",  glow: "hsl(28 70% 48% / 0.14)" },
-  { icon: Wrench,        label: "Engineering",              color: "text-amber-400",   glow: "hsl(38 70% 50% / 0.14)" },
-  { icon: Building2,     label: "Government",               color: "text-brand-blue",  glow: "hsl(38 42% 58% / 0.14)" },
-  { icon: FlaskConical,  label: "Life Sciences",            color: "text-amber-300",   glow: "hsl(32 50% 50% / 0.12)" },
-  { icon: Monitor,       label: "Information Technology",   color: "text-brand-green", glow: "hsl(28 62% 48% / 0.14)" },
-  { icon: Pill,          label: "Pharma",                   color: "text-orange-300",  glow: "hsl(22 55% 50% / 0.12)" },
-  { icon: Cpu,           label: "Semiconductor",            color: "text-brand-blue",  glow: "hsl(38 42% 58% / 0.14)" },
-  { icon: Radio,         label: "Telecom",                  color: "text-amber-400",   glow: "hsl(32 60% 50% / 0.12)" },
-  { icon: HeartPulse,    label: "Healthcare & Biomedical",  color: "text-rose-400",    glow: "hsl(8 68% 52% / 0.12)"  },
+  { icon: Monitor, label: "Consumer drones", href: "/products/consumer-drones", image: "/photos/drone-forest.jpg", alt: "Consumer drone in flight", color: "text-brand-blue" },
+  { icon: Cpu, label: "Drone accessories", href: "/products/accessories", image: "/photos/controller-tablet.jpg", alt: "Controller with a mounted screen", color: "text-brand-green" },
+  { icon: Wrench, label: "Replacement components", href: "/products/components", image: "/photos/parts.jpg", alt: "Drone with small replacement parts", color: "text-sky-600" },
+  { icon: Radio, label: "Batteries & charging", href: "/products/batteries", image: "/photos/charger-hand.jpg", alt: "Hand holding a multi-battery charger", color: "text-blue-600" },
+  { icon: Database, label: "Related electronics", href: "/products/related-electronics", image: "/photos/solar.jpg", alt: "Portable charging accessory", color: "text-brand-blue" },
 ];
 
 export function Industries() {
@@ -433,38 +424,30 @@ export function Industries() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <FadeIn className="mb-14">
-          <p className="hero-eyebrow mb-3">Industries we serve</p>
+          <p className="hero-eyebrow mb-3">Product categories</p>
           <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
             <h2 className="font-heading text-4xl font-extrabold leading-[1.05] tracking-[-0.03em] text-foreground sm:text-5xl">
-              Deep expertise<br />across every sector.
+              What you can<br />ask us about.
             </h2>
             <p className="max-w-sm text-sm leading-relaxed text-foreground/50 lg:text-right">
-              Software, data, and cloud work across many industries — so we match domain context, not just a job title.
+              These are category areas, not a live inventory. Contact us to ask what is available.
             </p>
           </div>
         </FadeIn>
 
         {/* Industry grid — safe responsive cols */}
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5">
           {industries.map((ind, i) => (
             <FadeIn key={ind.label} delay={i * 0.035}>
-              <div
-                className="group relative flex items-center gap-3 overflow-hidden rounded-xl border border-white/[0.07] bg-surface-elevated/50 px-4 py-3.5 backdrop-blur-sm transition-all duration-300 hover:border-white/[0.14] hover:bg-surface-elevated cursor-default"
-              >
-                {/* Hover radial glow */}
-                <div
-                  className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
-                  style={{ background: `radial-gradient(ellipse at 0% 50%, ${ind.glow}, transparent 70%)` }}
-                />
-                {/* Icon */}
-                <span className={`relative shrink-0 flex h-8 w-8 items-center justify-center rounded-lg border border-white/[0.07] bg-surface-dark/70 ${ind.color} transition-colors`}>
-                  <ind.icon className="h-[15px] w-[15px]" strokeWidth={1.6} />
+              <a href={ind.href} className="group block overflow-hidden rounded-2xl border border-border bg-white shadow-card transition-all duration-300 hover:border-brand-blue/40">
+                <img src={ind.image} alt={ind.alt} className="aspect-[4/3] w-full object-cover" />
+                <span className="flex items-center gap-2 px-3 py-3">
+                  <ind.icon className={`h-4 w-4 shrink-0 ${ind.color}`} strokeWidth={1.6} />
+                  <span className="min-w-0 text-[13px] font-medium leading-snug text-foreground/80 group-hover:text-foreground">
+                    {ind.label}
+                  </span>
                 </span>
-                {/* Label */}
-                <span className="relative min-w-0 text-[13px] font-medium leading-snug text-foreground/65 transition-colors group-hover:text-foreground/90">
-                  {ind.label}
-                </span>
-              </div>
+              </a>
             </FadeIn>
           ))}
         </div>

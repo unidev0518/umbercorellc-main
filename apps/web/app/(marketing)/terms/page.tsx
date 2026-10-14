@@ -1,38 +1,38 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Use | UmberCore",
-  description: "Terms and conditions governing use of the UmberCore website.",
+  title: "Terms of Use",
+  description: "Terms and conditions governing use of the TravelGuards LLC website.",
 };
 
 const sections = [
   {
     n: "01",
     title: "Acceptance of Terms",
-    body: `By accessing and using the UmberCore website (umbercore.com), you accept and agree to be bound by these Terms of Use and our Privacy Policy. If you do not agree to these terms, please do not use our website.
+    body: `By accessing and using the TravelGuards LLC website, you accept and agree to be bound by these Terms of Use and our Privacy Policy. If you do not agree to these terms, please do not use our website.
 
-These terms apply to all visitors, users, and others who access the site. UmberCore reserves the right to update these terms at any time. Continued use of the website following any changes constitutes your acceptance of the revised terms.`,
+These terms apply to all visitors, users, and others who access the site. TravelGuards LLC reserves the right to update these terms at any time. Continued use of the website following any changes constitutes your acceptance of the revised terms.`,
   },
   {
     n: "02",
     title: "Use of the Website",
-    body: `The content on this website is provided for general information purposes only. UmberCore reserves the right to modify, suspend, or discontinue any aspect of the website at any time without notice.
+    body: `The content on this website is provided for general information purposes only. TravelGuards LLC reserves the right to modify, suspend, or discontinue any aspect of the website at any time without notice.
 
 You agree not to use this site for any unlawful purpose or in any way that could damage, disable, overburden, or impair our servers or networks. You may not attempt to gain unauthorised access to any part of the website, or any server, computer, or database connected to it. You may not conduct any denial-of-service attack, transmit unsolicited communications, or introduce malicious code of any kind.`,
   },
   {
     n: "03",
     title: "Intellectual Property",
-    body: `All content, trademarks, logos, and intellectual property on this site are the property of UmberCore or its licensors. This includes — but is not limited to — text, graphics, design, and software.
+    body: `All content, trademarks, logos, and intellectual property on this site are the property of TravelGuards LLC or its licensors. This includes — but is not limited to — text, graphics, design, and software.
 
-You may not reproduce, distribute, modify, or create derivative works from any content on this site without express written permission from UmberCore. Unauthorised use of any materials on this site may violate copyright, trademark, and other applicable laws.`,
+You may not reproduce, distribute, modify, or create derivative works from any content on this site without express written permission from TravelGuards LLC. Unauthorised use of any materials on this site may violate copyright, trademark, and other applicable laws.`,
   },
   {
     n: "04",
     title: "Limitation of Liability",
-    body: `UmberCore makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the website or any information, products, or services contained on it.
+    body: `TravelGuards LLC makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the website or any information, products, or services contained on it.
 
-To the fullest extent permitted by applicable law, UmberCore excludes all liability for any loss or damage — including indirect or consequential loss — arising from your use of, or inability to use, this website or its content. Your use of this website is entirely at your own risk.`,
+To the fullest extent permitted by applicable law, TravelGuards LLC excludes all liability for any loss or damage — including indirect or consequential loss — arising from your use of, or inability to use, this website or its content. Your use of this website is entirely at your own risk.`,
   },
 ];
 
@@ -51,7 +51,7 @@ export default function TermsPage() {
             Terms of Use
           </h1>
           <p className="mt-4 text-lg text-foreground/50">
-            Terms and conditions governing use of the UmberCore website.
+            Terms and conditions governing use of the TravelGuards LLC website.
           </p>
           <p className="mt-3 text-sm text-foreground/30">Last updated: July 2026</p>
         </div>
@@ -77,12 +77,12 @@ export default function TermsPage() {
           </div>
 
           {/* Contact note */}
-          <div className="mt-14 rounded-2xl border border-white/[0.07] bg-surface-elevated/40 p-7">
+          <div className="mt-14 rounded-2xl border border-border bg-white p-7 shadow-card">
             <p className="text-sm font-semibold text-foreground mb-1">Questions about these terms?</p>
             <p className="text-sm text-foreground/55">
-              If you have any questions regarding these Terms of Use, please contact us at{" "}
-              <a href="mailto:support@umbercore.com" className="text-brand-green hover:underline">
-                support@umbercore.com
+              If you have any questions regarding these Terms of Use, please use our{" "}
+              <a href="/contact" className="text-brand-green hover:underline">
+                contact form
               </a>.
             </p>
           </div>

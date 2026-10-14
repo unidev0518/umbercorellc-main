@@ -78,30 +78,30 @@ const preset: Partial<Config> = {
       },
       backgroundImage: {
         "gradient-brand":
-          "linear-gradient(135deg, hsl(24 18% 10%) 0%, hsl(24 16% 14%) 50%, hsl(28 22% 14%) 100%)",
+          "linear-gradient(135deg, hsl(204 70% 96%) 0%, hsl(199 60% 94%) 50%, hsl(207 55% 95%) 100%)",
         "gradient-hero":
-          "radial-gradient(ellipse 80% 60% at 15% 0%, hsl(28 62% 48% / 0.16), transparent 55%), radial-gradient(ellipse 60% 50% at 85% 5%, hsl(38 42% 58% / 0.12), transparent 50%), linear-gradient(180deg, hsl(24 22% 5%) 0%, hsl(24 18% 9%) 100%)",
+          "radial-gradient(ellipse 80% 60% at 15% 0%, hsl(199 88% 52% / 0.22), transparent 55%), radial-gradient(ellipse 60% 50% at 85% 5%, hsl(207 78% 48% / 0.16), transparent 50%), linear-gradient(180deg, hsl(204 70% 97%) 0%, hsl(204 55% 95%) 100%)",
         "gradient-mesh":
-          "radial-gradient(at 30% 20%, hsl(28 62% 48% / 0.12) 0px, transparent 50%), radial-gradient(at 80% 0%, hsl(38 42% 58% / 0.10) 0px, transparent 50%), radial-gradient(at 0% 60%, hsl(28 40% 30% / 0.10) 0px, transparent 50%)",
+          "radial-gradient(at 30% 20%, hsl(199 88% 52% / 0.16) 0px, transparent 50%), radial-gradient(at 80% 0%, hsl(207 78% 48% / 0.12) 0px, transparent 50%), radial-gradient(at 0% 60%, hsl(204 50% 70% / 0.14) 0px, transparent 50%)",
         "gradient-footer":
           "linear-gradient(90deg, hsl(var(--brand-green)), hsl(var(--brand-blue)), hsl(var(--brand-green)))",
         "gradient-text":
           "linear-gradient(135deg, hsl(var(--brand-green-soft)) 0%, hsl(var(--brand-blue)) 100%)",
         "gradient-card":
-          "linear-gradient(145deg, hsl(24 14% 14%) 0%, hsl(24 18% 10%) 100%)",
+          "linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(204 55% 97%) 100%)",
         "gradient-threat":
-          "radial-gradient(circle, hsl(8 68% 52% / 0.35) 0%, transparent 70%)",
+          "radial-gradient(circle, hsl(8 68% 52% / 0.2) 0%, transparent 70%)",
         "gradient-shield":
-          "radial-gradient(circle, hsl(28 62% 48% / 0.25) 0%, transparent 70%)",
+          "radial-gradient(circle, hsl(207 78% 48% / 0.18) 0%, transparent 70%)",
       },
       boxShadow: {
-        card: "0 4px 24px -4px rgba(0, 0, 0, 0.45)",
-        elevated: "0 20px 50px -12px rgba(0, 0, 0, 0.55)",
-        glow: "0 0 40px -8px hsl(28 62% 48% / 0.4)",
-        "glow-blue": "0 0 40px -8px hsl(38 42% 58% / 0.35)",
-        "glow-lg": "0 0 80px -16px hsl(28 62% 48% / 0.3)",
-        "glow-threat": "0 0 60px -10px hsl(8 68% 52% / 0.45)",
-        inner: "inset 0 1px 0 0 hsl(36 28% 94% / 0.05)",
+        card: "0 8px 24px -10px rgba(18, 72, 130, 0.14)",
+        elevated: "0 18px 40px -16px rgba(18, 72, 130, 0.18)",
+        glow: "0 8px 28px -8px hsl(207 78% 40% / 0.35)",
+        "glow-blue": "0 8px 28px -8px hsl(199 88% 46% / 0.35)",
+        "glow-lg": "0 12px 36px -12px hsl(207 78% 40% / 0.28)",
+        "glow-threat": "0 8px 28px -10px hsl(8 68% 52% / 0.28)",
+        inner: "inset 0 1px 0 0 hsl(0 0% 100% / 0.8)",
       },
       animation: {
         float: "float 6s ease-in-out infinite",

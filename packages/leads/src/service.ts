@@ -6,7 +6,7 @@ export class LeadService {
     await EmailService.notifyAdminNewLead({
       name: `${input.first_name} ${input.last_name}`,
       email: input.email,
-      company: input.company_name,
+      company: input.company_name?.trim() || "Individual",
       interest: input.service_interest,
       availability: input.availability ?? undefined,
       message: input.message ?? undefined,

@@ -47,8 +47,8 @@ export function LeadForm() {
           <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-brand-accent/20 text-2xl">
             ✓
           </div>
-          <h3 className="mt-4 font-heading text-xl font-semibold">Thanks — we&apos;ll be in touch</h3>
-          <p className="mt-2 text-muted-foreground">We&apos;ll reply within 1 business day.</p>
+          <h3 className="mt-4 font-heading text-xl font-semibold">Thanks — we received your inquiry</h3>
+          <p className="mt-2 text-muted-foreground">We will follow up by email about product availability and purchasing options.</p>
         </CardContent>
       </Card>
     );
@@ -73,7 +73,7 @@ export function LeadForm() {
         </div>
       </div>
       <div>
-        <Label htmlFor="company_name">Company</Label>
+        <Label htmlFor="company_name">Company (optional)</Label>
         <Input id="company_name" {...register("company_name")} className="mt-1" />
         {errors.company_name && (
           <p className="mt-1 text-sm text-danger">{errors.company_name.message}</p>
@@ -87,30 +87,27 @@ export function LeadForm() {
         )}
       </div>
       <div>
-        <Label htmlFor="service_interest">What are you looking for?</Label>
+        <Label htmlFor="service_interest">Product of interest</Label>
         <select
           id="service_interest"
           className="mt-1 flex h-10 w-full rounded-md border border-input bg-surface-elevated px-3 text-sm"
           {...register("service_interest")}
         >
           <option value="not_sure">Not sure yet</option>
-          <option value="ai-consulting">Software & AI Consulting</option>
-          <option value="ai-assisted-development">AI-Assisted Development</option>
-          <option value="data-processing">Data Processing & Integration</option>
-          <option value="cloud-hosting">Cloud & Application Hosting</option>
-          <option value="staff-augmentation">Engineering Support</option>
-          <option value="project-delivery">Project-Based Delivery</option>
-          <option value="technical-discovery">Technical Discovery & Scoping</option>
-          <option value="team-enablement">Team Enablement & Ramp-up</option>
-          <option value="advisory-retainer">Ongoing Tech Advisory</option>
+          <option value="drones">Consumer drones</option>
+          <option value="accessories">Drone accessories</option>
+          <option value="components">Replacement components</option>
+          <option value="batteries">Batteries & charging</option>
+          <option value="electronics">Related electronics</option>
+          <option value="sourcing">Product sourcing</option>
         </select>
       </div>
       <div>
-        <Label htmlFor="availability">Your availability for a call (optional)</Label>
-        <Input id="availability" {...register("availability")} className="mt-1" placeholder="e.g. Weekdays after 2pm EST, or any time this week" />
+        <Label htmlFor="availability">Subject</Label>
+        <Input id="availability" {...register("availability")} className="mt-1" placeholder="Product availability, order question, or general inquiry" />
       </div>
       <div>
-        <Label htmlFor="message">Message (optional)</Label>
+        <Label htmlFor="message">Message</Label>
         <textarea
           id="message"
           rows={4}

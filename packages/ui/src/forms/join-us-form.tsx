@@ -226,7 +226,7 @@ export function ClientForm() {
           className="mt-0.5 h-4 w-4 shrink-0 rounded border-border accent-brand-blue"
         />
         <label htmlFor="cl_consent" className="text-xs leading-relaxed text-muted-foreground">
-          I authorize UmberCore to retain my personal data. By entering your number, you agree to receive mobile messages. Message and data rates may apply. You can unsubscribe at any time by replying &ldquo;STOP&rdquo;. Read our{" "}
+          I authorize TravelGuards LLC to retain my personal data. By entering your number, you agree to receive mobile messages. Message and data rates may apply. You can unsubscribe at any time by replying &ldquo;STOP&rdquo;. Read our{" "}
           <a href="/privacy" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">privacy policy</a>.
         </label>
       </div>

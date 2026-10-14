@@ -1,33 +1,33 @@
 export const metadata = {
-  title: "Privacy Policy — UmberCore",
-  description: "How UmberCore collects, uses, and protects your personal information.",
+  title: "Privacy Policy",
+  description: "How TravelGuards LLC collects, uses, and protects your personal information.",
 };
 
 const sections = [
   {
     n: "01",
     title: "Information We Collect",
-    body: `UmberCore ("UmberCore", "we", "our", or "us") collects information you voluntarily provide when you contact us through our website forms, including your name, email address, phone number, company name, and any messages you submit. We may also collect technical data such as IP addresses, browser type, and pages visited through cookies and analytics tools to improve your experience on our website.`,
+    body: `TravelGuards LLC ("TravelGuards LLC", "we", "our", or "us") collects information you voluntarily provide when you contact us through our website forms, including your name, email address, phone number, company name, and any messages you submit. We may also collect technical data such as IP addresses, browser type, and pages visited through cookies and analytics tools to improve your experience on our website.`,
   },
   {
     n: "02",
     title: "How We Use Your Information",
-    body: `We use the personal information you provide to respond to your inquiries, match you with relevant technology consulting and delivery services, send communications related to your request or our services, improve our website and service offerings, comply with legal obligations, and maintain records of our business interactions. We will not use your personal data for any purpose incompatible with these stated objectives without your prior consent.`,
+    body: `We use the personal information you provide to respond to product and order inquiries, send communications related to your request, improve our website, comply with legal obligations, and maintain records of our business interactions. We will not use your personal data for any purpose incompatible with these stated objectives without your prior consent.`,
   },
   {
     n: "03",
     title: "SMS & Mobile Communications",
-    body: `By providing your phone number and consenting through our contact form, you agree to receive mobile messages from UmberCore related to your inquiry or our consulting services. Message frequency varies based on your engagement with us. Standard message and data rates may apply depending on your carrier and plan. You can opt out at any time by replying "STOP" to any message. For help, reply "HELP". Carriers are not liable for delayed or undelivered messages. UmberCore respects your communication preferences and will honor all opt-out requests promptly.`,
+    body: `If you provide a phone number and consent to messages, you agree to receive mobile messages from TravelGuards LLC related to your inquiry. Message frequency varies. Standard message and data rates may apply depending on your carrier and plan. You can opt out at any time by replying "STOP" to any message. For help, reply "HELP". Carriers are not liable for delayed or undelivered messages.`,
   },
   {
     n: "04",
     title: "Data Retention",
-    body: `UmberCore retains your personal data for as long as necessary to fulfill the purposes outlined in this policy or as required by applicable law. Contact inquiries are typically retained for up to three (3) years from the date of submission. Client and contractor records may be retained for longer periods in accordance with our business and legal obligations. You may request deletion of your data at any time by contacting us directly.`,
+    body: `TravelGuards LLC retains your personal data for as long as necessary to fulfill the purposes outlined in this policy or as required by applicable law. Contact inquiries are typically retained for up to three (3) years from the date of submission. Client and contractor records may be retained for longer periods in accordance with our business and legal obligations. You may request deletion of your data at any time by contacting us directly.`,
   },
   {
     n: "05",
     title: "Sharing Your Information",
-    body: `UmberCore does not sell, trade, or rent your personal information to third parties. We may share your information with authorized personnel who need access to respond to your inquiry, with trusted third-party service providers who assist in operating our website or conducting our business (under strict confidentiality agreements), and with legal authorities when required by law or to protect our legal rights. Any third parties with whom we share data are required to maintain the confidentiality and security of your information.`,
+    body: `TravelGuards LLC does not sell, trade, or rent your personal information to third parties. We may share your information with authorized personnel who need access to respond to your inquiry, with trusted third-party service providers who assist in operating our website or conducting our business (under strict confidentiality agreements), and with legal authorities when required by law or to protect our legal rights. Any third parties with whom we share data are required to maintain the confidentiality and security of your information.`,
   },
   {
     n: "06",
@@ -37,7 +37,7 @@ const sections = [
   {
     n: "07",
     title: "Data Security",
-    body: `UmberCore implements industry-standard technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. This includes secure HTTPS connections, encrypted data storage, and access controls limited to authorized personnel. While we take every reasonable precaution, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.`,
+    body: `TravelGuards LLC implements industry-standard technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. This includes secure HTTPS connections, encrypted data storage, and access controls limited to authorized personnel. While we take every reasonable precaution, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.`,
   },
   {
     n: "08",
@@ -47,17 +47,17 @@ const sections = [
   {
     n: "09",
     title: "Children's Privacy",
-    body: `UmberCore's services are intended for business professionals and are not directed to individuals under the age of 18. We do not knowingly collect personal information from minors. If we become aware that a minor has submitted personal information through our website, we will take steps to delete such information promptly.`,
+    body: `TravelGuards LLC's services are intended for business professionals and are not directed to individuals under the age of 18. We do not knowingly collect personal information from minors. If we become aware that a minor has submitted personal information through our website, we will take steps to delete such information promptly.`,
   },
   {
     n: "10",
     title: "Third-Party Links",
-    body: `Our website may contain links to third-party websites for your convenience and reference. UmberCore is not responsible for the privacy practices or content of those external sites. We encourage you to review the privacy policies of any third-party sites you visit.`,
+    body: `Our website may contain links to third-party websites for your convenience and reference. TravelGuards LLC is not responsible for the privacy practices or content of those external sites. We encourage you to review the privacy policies of any third-party sites you visit.`,
   },
   {
     n: "11",
     title: "Changes to This Policy",
-    body: `UmberCore reserves the right to update or modify this Privacy Policy at any time. When we make material changes, we will update the "Last Updated" date at the top of this page. Your continued use of our website or services after any changes constitutes your acceptance of the updated policy. We encourage you to review this policy periodically.`,
+    body: `TravelGuards LLC reserves the right to update or modify this Privacy Policy at any time. When we make material changes, we will update the "Last Updated" date at the top of this page. Your continued use of our website or services after any changes constitutes your acceptance of the updated policy. We encourage you to review this policy periodically.`,
   },
 ];
 
@@ -72,13 +72,13 @@ export default function PrivacyPage() {
             Privacy Policy
           </h1>
           <p className="mt-3 text-sm text-muted-foreground">
-            Last Updated: July 1, 2026 &middot; UmberCore
+            Last Updated: July 1, 2026 &middot; TravelGuards LLC
           </p>
           <p className="mt-5 text-base leading-relaxed text-foreground/60 max-w-xl">
-            At UmberCore, we are committed to protecting your privacy and handling your personal
+            At TravelGuards LLC, we are committed to protecting your privacy and handling your personal
             information with transparency and care. This Privacy Policy explains how we collect,
             use, store, and protect the information you share with us when you use our website
-            or engage with our technology consulting and delivery services.
+            or send us a product or order inquiry.
           </p>
         </div>
       </div>
@@ -110,13 +110,14 @@ export default function PrivacyPage() {
             </h2>
             <p className="text-sm leading-[1.85] text-foreground/60 mb-4">
               If you have questions, concerns, or requests regarding this Privacy Policy or how
-              UmberCore handles your personal data, please contact us:
+              TravelGuards LLC handles your personal data, please contact us:
             </p>
             <address className="not-italic text-sm leading-loose text-foreground/70 border-l-2 border-brand-green/30 pl-4">
-              UmberCore<br />
-              Email:{" "}
-              <a href="mailto:privacy@umbercore.com" className="text-brand-blue hover:underline">
-                privacy@umbercore.com
+              TravelGuards LLC<br />
+              84 W Broadway, Ste 200<br />
+              Derry, NH 03038<br />
+              <a href="/contact" className="text-brand-blue hover:underline">
+                Contact form
               </a>
             </address>
           </div>
@@ -124,7 +125,7 @@ export default function PrivacyPage() {
 
         {/* Footer line */}
         <div className="border-t border-border pt-8 text-xs text-muted-foreground">
-          &copy; 2026 UmberCore. All rights reserved.
+          &copy; 2026 TravelGuards LLC. All rights reserved.
         </div>
       </div>
     </div>

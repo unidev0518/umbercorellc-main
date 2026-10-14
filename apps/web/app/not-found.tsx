@@ -21,7 +21,7 @@ export default function NotFound() {
         </Link>
         <Link
           href="/services"
-          className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.04] px-6 py-3 font-semibold text-foreground transition-all hover:bg-white/[0.08]"
+          className="inline-flex items-center gap-2 rounded-xl border border-border bg-white px-6 py-3 font-semibold text-foreground transition-all hover:bg-surface-mid"
         >
           View services
         </Link>

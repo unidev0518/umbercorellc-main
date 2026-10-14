@@ -1,13 +1,22 @@
 "use client";
 
-export function AnimatedBackground({ variant = "dark" }: { variant?: "light" | "dark" }) {
+export function AnimatedBackground({ variant = "light" }: { variant?: "light" | "dark" }) {
+  const isLight = variant !== "dark";
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
-      <div className="absolute inset-0 bg-gradient-mesh opacity-80" />
       <div
-        className="absolute inset-0 opacity-[0.04]"
+        className="absolute inset-0"
         style={{
-          backgroundImage: `linear-gradient(hsl(210 40% 96%) 1px, transparent 1px), linear-gradient(90deg, hsl(210 40% 96%) 1px, transparent 1px)`,
+          background: isLight
+            ? "radial-gradient(at 30% 20%, hsl(199 88% 62% / 0.16) 0px, transparent 50%), radial-gradient(at 80% 0%, hsl(207 70% 70% / 0.14) 0px, transparent 46%)"
+            : undefined,
+        }}
+      />
+      <div
+        className="absolute inset-0"
+        style={{
+          opacity: isLight ? 0.35 : 0.04,
+          backgroundImage: `linear-gradient(hsl(207 45% 78% / 0.35) 1px, transparent 1px), linear-gradient(90deg, hsl(207 45% 78% / 0.35) 1px, transparent 1px)`,
           backgroundSize: "40px 40px",
         }}
       />

@@ -8,9 +8,9 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-foreground text-surface-dark shadow-md hover:opacity-90",
+        default: "bg-foreground text-white shadow-md hover:opacity-90",
         accent:
-          "bg-gradient-to-r from-brand-green to-brand-blue text-surface-dark shadow-glow hover:shadow-glow-lg hover:brightness-110",
+          "bg-gradient-to-r from-brand-green to-brand-blue text-white shadow-glow hover:shadow-glow-lg hover:brightness-110",
         secondary: "bg-secondary text-foreground hover:bg-secondary/80",
         outline:
           "border border-border bg-surface-elevated text-foreground hover:border-brand-blue/50 hover:bg-surface-mid",
